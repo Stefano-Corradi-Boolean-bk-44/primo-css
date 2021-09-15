@@ -26,12 +26,14 @@ h3{
 }
 
 .main-box{
+  box-sizing: border-box;
   width: 600px;
   height: 300px;
   /*colore di sfondo con 50% di opacità*/
   background-color: rgba(230, 107, 95, .5);
   border: 2px solid black;
   border-radius: 10px;
+  padding: 20px;
 }
 
 .text-box{
@@ -55,7 +57,7 @@ h3{
   width: 800px;
   height: 400px;
   border: 1px solid black;
-  /*i percorsi delle immagini sono a paretire dalla cartella CSS*/ 
+  /*i percorsi delle immagini sono a partire dalla cartella CSS*/ 
   background-image: url('../img/logo-boolean.png');
   background-repeat: no-repeat;
   /* background-position: center; */
@@ -63,3 +65,71 @@ h3{
 }
 
 
+.main-box.primo{
+  margin-bottom: 20px;
+}
+
+.main-box.secondo{
+  margin-top: -10px;
+}
+
+input[type="email"]
+{
+  background-color: brown;
+}
+
+ul li{
+  color: grey;;
+}
+
+/* solo il primo figlio */
+ul.prima  li:first-child{
+  color: green;
+}
+
+/* solo l'ultimo figlio */
+ul.prima  li:last-child{
+  color: blue;
+}
+
+/* solo il qualto figlio */
+ul.prima  li:nth-child(4){
+  color:coral;
+}
+
+/* tutti i multipli di 3 a partire dal quinto elemento */
+ul.prima  li:nth-child(3n + 5){
+  color: yellow;
+}
+
+/* solo i figli dispari */
+ul.seconda  li:nth-child(odd){
+  color:coral;
+}
+
+/* situazione di default */
+a, a:visited{
+  text-decoration: none;
+  color:darkred;
+}
+
+/* al passaggio del mouse */
+a:hover{
+  text-decoration: underline;
+}
+
+/* quando clicco */
+a:active{
+  color: red;
+}
+
+
+
+
+
+
+
+
+.end{
+  margin-top: 100px;
+}
